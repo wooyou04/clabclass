@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색깔 바꾸기</title>
+    
+    <style>
+        button {
+        width:100px;
+        height:50px;
+        font-size:20px;
+    }
+    #pp{
+        font-size: 30px;
+    }
+    .black{
+        color: black;
+    }
+    .pink{
+        color: pink;
+    }
+    .blue{
+        color: aqua;
+    }
+    .green{
+        color: seagreen;
+    }
+    .purple{
+        color: purple;
+    }
+    
+    </style>
+</head>
+<body>
+ <strong><p class='black' id="pp">Hello World!</p></strong>   
+<br>
+<div class="color">원하는 텍스트 색상을 선택해보세요.</div>
+<br>
+
+<button type="button" id="btn-black">검정</button>
+<button type="button" id="btn-pink">핑크</button>
+<button type="button" id="btn-blue">하늘</button>
+<button type="button" id="btn-green">초록</button>
+<button type="button" id="btn-purple">보라</button>
+
+
+
+    <script>
+    
+       document.getElementById('btn-black')
+       .addEventListener('click', function(){
+           document.getElementById('pp').setAttribute('class','black')
+         
+       
+       })
+       
+       document.getElementById('btn-pink')
+       .addEventListener('click', function(){
+           document.getElementById('pp').setAttribute('class','pink')
+       })
+       
+         document.getElementById('btn-blue')
+         .addEventListener('click', function(){
+           document.getElementById('pp').setAttribute('class','blue')
+         })
+
+         document.getElementById('btn-green')
+         .addEventListener('click', function(){
+           document.getElementById('pp').setAttribute('class','green')
+         })
+         document.getElementById('btn-purple')
+         .addEventListener('click', function(){
+           document.getElementById('pp').setAttribute('class','purple')
+         })
+       
+       
+       
+           </script>  
+</body>
+</html>
+
+    
+    

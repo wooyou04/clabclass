@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상자옮기기</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            /* border: 20px solid rgb(95, 17, 64); */
+            text-align: center;
+            background-color: palevioletred;
+            font-size: 50px;
+            line-height: 180px;
+            margin-top: 30px;
+            position: absolute;
+
+        }
+
+        #box2 {
+            width: 200px;
+            height: 200px;
+
+            text-align: center;
+
+            font-size: 50px;
+            line-height: 180px;
+            margin-top: 500px;
+            position: absolute;
+
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <button id="left">왼쪽으로 이동</button>
+    <button id="right">오른쪽으로 이동</button>
+    <button id="up">위쪽으로 이동</button>
+    <button id="down">밑으로 이동</button>
+    <br>
+    <button id="speed 50">속도50</button>
+    <button id="speed 100">속도100</button>
+    <button id="speed 200">속도200</button>
+    <button id="color">색상 바꾸기</button>
+    <div id="box" style="background-color:red;"> <strong> BOX</strong></div>
+    <div id="box2" style="background-color:rgb(0, 255, 221);"> <strong>box</strong></div>
+    <style>
+
+    </style>
+
+
+
+
+
+    <script>
+
+        var width = 0
+        var height = 0
+        var speed = 100
+        var speed2 = 200
+        var speed3 = 50
+        var a = document.getElementById('box')
+        var p = document.getElementById('box2')
+        function color(arg) {
+            if (arg.style.backgroundColor == 'red') {
+                arg.style.backgroundColor = 'rgb(0, 255, 221)'
+            }
+            else if (arg.style.backgroundColor == 'rgb(0, 255, 221)') {
+                arg.style.backgroundColor = 'yellow'
+            }
+
+            else if (arg.style.backgroundColor == 'yellow') {
+                arg.style.backgroundColor = 'pink'
+            }
+            else if (arg.style.backgroundColor == 'pink') {
+                arg.style.backgroundColor = 'red'
+            }
+        }
+
+        document.getElementById('left')
+            .addEventListener('click', function () {
+                if (width > parseInt('0px')) {
+                    color(a);
+                    width = width - speed
+                    a.style.left = width + 'px'
+                }
+
+
+            });
+
+
+        document.getElementById('right')
+            .addEventListener('click', function () {
+                if (width < parseInt('1200px')) {
+                    color(a);
+                    width = width + speed
+                    a.style.left = width + 'px'
+                }
+
+
+            });
+
+        document.getElementById('up')
+            .addEventListener('click', function () {
+                if (height > parseInt('0px')) {
+                    color(a);
+                    height = height - speed
+                    a.style.top = height + 'px'
+                }
+
+
+            });
+
+
+        document.getElementById('down')
+            .addEventListener('click', function () {
+                if (height < parseInt('450px')) {
+                    color(a);
+                    height = height + speed
+                    a.style.top = height + 'px'
+                }
+
+
+
+            });
+
+
+
+        // 방향키로 움직이기
+        window.addEventListener('keydown', function (e) {           //우
+            if (event.keyCode === 39) {
+                color(a);
+                if (width < parseInt('1200px')) {
+                    width = width + speed
+                    a.style.left = width + 'px'
+                }
+            }
+        });
+        window.addEventListener('keydown', function (e) {           //좌  
+            if (event.keyCode === 37) {
+                color(a);
+                if (width > parseInt('0px')) {
+                    width = width - speed
+                    a.style.left = width + 'px'
+                }
+            }
+        });
+        window.addEventListener('keydown', function (e) {           //상
+            if (event.keyCode === 38) {
+                color(a);
+                if (height > parseInt('0px')) {
+                    height = height - speed
+                    a.style.top = height + 'px'
+                }
+            }
+        });
+        window.addEventListener('keydown', function (e) {           //하
+            if (event.keyCode === 40) {
+                color(a);
+                if (height < parseInt('470px')) {
+                    height = height + speed
+                    a.style.top = height + 'px'
+                }
+            }
+        });
+
+
+
+        // 속도 
+
+        document.getElementById('speed 50')
+            .addEventListener('click', function () {
+                speed = 50
+                color(p);
+
+            });
+
+
+
+        document.getElementById('speed 100')
+            .addEventListener('click', function () {
+                speed = 100
+                color(p);
+            });
+
+
+
+
+        document.getElementById('speed 200')
+            .addEventListener('click', function () {
+                speed = 200
+                color(p);
+            })
+
+
+        document.getElementById('color')
+            .addEventListener('click', function () {
+                if (a.style.backgroundColor == 'red') {
+                    a.style.backgroundColor = 'rgb(0, 255, 221'
+                }
+                else if (a.style.backgroundColor == 'rgb(0, 255, 221') {
+                    a.style.backgroundColor = 'yellow'
+                }
+
+                else if (a.style.backgroundColor == 'yellow') {
+                    a.style.backgroundColor = 'pink'
+                }
+                else if (a.style.backgroundColor == 'pink') {
+                    a.style.backgroundColor = 'red'
+                }
+
+            });
+
+
+
+
+    </script>
+
+</body>
+
+</html>

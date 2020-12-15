@@ -1,0 +1,66 @@
+<button type="button" id="btn-green">초록</button>
+<button type="button" id="btn-yellow">노랑</button>
+<button type="button" id="btn-red">빨강</button>
+
+<div id="traffic-lights">
+	<span id="green"></span>
+	<span id="yellow"></span>
+	<span id="red"></span>
+</div>
+<style>
+    button {
+	width:100px;
+	height:50px;
+	font-size:30px;
+}
+#traffic-lights {
+	background:#000;
+	width:500px;
+	height:100px;
+	padding:40px;
+	text-align:center;
+	margin-top:30px;
+}
+#traffic-lights span {
+	display:inline-block;
+	width:100px;
+	height:100px;
+	border-radius:100%;
+	margin:0 20px;
+}
+#green {
+	background:gray;
+}
+#yellow {
+	background:gray;
+}
+#red {
+	background:gray;
+}
+</style>
+
+<script>
+    window.onload=button
+var button = document.getElementById('btn-green');
+button.addEventListener('click', function(){
+ document.getElementById('green').style.background='green';
+ document.getElementById('yellow').style.background='gray';
+ document.getElementById('red').style.background='gray';
+})
+
+
+var button = document.getElementById('btn-yellow');
+button.addEventListener('click', function(){
+ document.getElementById('green').style.background='gray';
+ document.getElementById('yellow').style.background='yellow';
+ document.getElementById('red').style.background='gray';
+})
+
+
+var button = document.getElementById('btn-red');
+button.addEventListener('click', function(){
+ document.getElementById('green').style.background='gray';
+ document.getElementById('yellow').style.background='gray';
+ document.getElementById('red').style.background='red';
+})
+</script>

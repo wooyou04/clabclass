@@ -1,0 +1,336 @@
+li {
+  list-style: none;
+}
+header {
+  height: 80px;
+  border-bottom: 1px solid #777;
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+main {
+  background-color: white;
+  position: relative;
+  /* width: 1040px; */
+  height: 2500px;
+}
+
+.mainimg {
+  position: relative;
+  right: 500px;
+}
+
+.boxynews {
+  padding-bottom: 30px;
+}
+
+.boxynewsgroup {
+  margin: auto;
+  margin-top: -10px;
+  margin-bottom: -20px;
+  text-align: center;
+  width: 1040px;
+  background-color: lightgray;
+}
+main .boxynewsgroup img {
+  width: 318px;
+  height: 180px;
+}
+main .boxynewsgroup li {
+  text-align: left;
+  box-sizing: border-box;
+  margin: 13.25px;
+  float: left;
+  width: 320px;
+  height: 360px;
+}
+/* main .boxynewsgroup .boxnews1,
+.boxnews2,
+.boxnews3,
+.boxnews4,
+.boxnews5,
+.boxnews6 {
+  padding: 0px 20px;
+  font-size: 12px;
+  line-height: normal;
+  padding-bottom: 10px;
+  padding-top: 5px;
+} */
+.boxnews1 {
+  cursor: pointer;
+  background-color: whitesmoke;
+  margin: 20px 0px;
+  height: 350px;
+  border: 1px solid gray;
+}
+
+.boxnews2 {
+  cursor: pointer;
+  background-color: whitesmoke;
+  margin: 20px 0px;
+  height: 350px;
+  border: 1px solid gray;
+}
+
+.boxnews3 {
+  cursor: pointer;
+  background-color: whitesmoke;
+  margin: 20px 0px;
+  height: 350px;
+  border: 1px solid gray;
+}
+.boxnews4 {
+  cursor: pointer;
+  background-color: whitesmoke;
+  margin: 20px 0px;
+  height: 350px;
+  border: 1px solid gray;
+}
+
+.boxnews5 {
+  cursor: pointer;
+  background-color: whitesmoke;
+  margin: 20px 0px;
+  height: 350px;
+  border: 1px solid gray;
+}
+
+.boxnews6 {
+  cursor: pointer;
+  background-color: whitesmoke;
+  margin: 20px 0px;
+  height: 350px;
+  border: 1px solid gray;
+}
+footer {
+  /* background: rgb(0, 18, 83);
+    color: white;
+    padding: 30px 0;
+    font-size: 18px;
+    bottom: auto; */
+  background: rgb(0, 18, 83);
+  padding: 30px 0;
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.inner-container {
+  /* width: 1040px;
+        margin: 0 auto;
+      position: relative; */
+  width: 1040px;
+  margin: 0 auto;
+  position: relative;
+}
+
+nav {
+  margin: 30px;
+}
+
+.logo {
+  position: absolute;
+  left: 0px;
+  font-size: 25px;
+  top: -10px;
+}
+.oppa {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  text-align: center;
+  /* position: absolute;
+    left: 300px; */
+}
+#ukiss {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.box {
+  display: flex;
+  /* border-bottom: 0.5px solid skyblue ; */
+  background-color: rgb(0, 18, 83);
+  padding-bottom: 40px;
+  /* justify-content: space-between; */
+  border-bottom: 1px solid gray;
+}
+.box1 {
+  color: white;
+}
+.study {
+  font-size: 25px;
+}
+
+.box2 {
+  color: white;
+}
+
+.born {
+  font-size: 25px;
+  text-align: center;
+}
+.box3 {
+  color: white;
+}
+.to {
+  font-size: 25px;
+  text-align: center;
+}
+.box4 {
+  color: white;
+}
+.beat {
+  font-size: 25px;
+  text-align: center;
+}
+.box5 {
+  color: white;
+}
+.Ateez {
+  font-size: 25px;
+  text-align: center;
+}
+.box6 {
+  color: white;
+}
+.wooyou {
+  font-size: 25px;
+  text-align: center;
+}
+.footerimg {
+  /* display: flex;
+    position: absolute;
+     margin-left: 700px;
+     margin-right: auto;   
+     background-color: rgb(0, 18, 83) ;
+     top: 870px; */
+  display: flex;
+
+  margin: 25px 0;
+}
+.facebook {
+  position: absolute;
+  right: 470px;
+}
+.insta {
+  /* margin: 0 510px; */
+  position: absolute;
+  left: 510px;
+}
+.youtube {
+  position: absolute;
+  left: 470px;
+}
+
+.code {
+  /* position: relative;
+        text-align: center;
+        top: 70px;
+        right: 400px; */
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.slogun {
+  font-size: 25px;
+  text-align: center;
+}
+.letter {
+  text-align: center;
+  font-size: 15px;
+}
+#boxy {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 30px;
+  /* right: -90px; */
+  justify-content: center;
+}
+
+.boxyone {
+  background-color: rgb(22, 22, 161);
+  color: white;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.boxytwo {
+  background-color: rgb(0, 18, 83);
+  color: white;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.boxythree {
+  background-color: rgb(22, 22, 161);
+  color: white;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.news {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 60px;
+}
+
+.code {
+  background-color: rgb(0, 18, 83);
+  color: white;
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* #main{
+    position: relative;
+    top: 300px;
+    width: 1000px;
+    height: 300px;
+  
+} */
+
+.apple {
+  text-align: center;
+  font-size: 25px;
+}
+.banana {
+  text-align: center;
+  font-size: 15px;
+}
+
+.bodo {
+  color: gray;
+  display: flex;
+  padding-right: 20px;
+}
+
+b {
+  display: flex;
+  padding: 10px;
+  height: 30px;
+  border-bottom: 1px gray solid;
+}
+
+.date {
+  position: absolute;
+  right: 60px;
+  color: rgb(199, 198, 194);
+}
+
+#christmas {
+  position: absolute;
+  top: 50x;
+  right: 0;
+}

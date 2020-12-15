@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script>
+        var text = ["green", "red", "blue", "pink", "yellow"];
+
+
+        for (var index in text) {
+            var paragraph = document.createElement("p");
+            paragraph.innerText = text[index];
+            paragraph.classList.add("element");
+            if (index % 2) paragraph.classList.add('circle');
+            document.getElementById("container").appendChild(paragraph)
+            paragraph.classList.add(text[index])
+
+        }
+
+
+    </script>
+    <style>
+        #container {
+            width: 1500px;
+            height: 250px;
+            background-color: darkgray;
+            justify-content: center;
+            display: flex;
+        }
+
+        .element {
+            background-color: black;
+            color: black;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            margin: 20px;
+            line-height: 180px;
+            font-size: 30px;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .red {
+            background-color: red;
+
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .pink {
+            background-color: pink;
+
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .circle {
+            border-radius: 100px;
+        }
+    </style>
+</body>
+
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상자옮기기</title>
+    <style>
+    
+        #box {
+        width:200px;
+        height:200px;
+        border: 20px solid rgb(95, 17, 64) ;
+        text-align: center;
+        background-color: palevioletred;
+        font-size: 40px;
+        line-height: 180px;
+        margin-top: 50px;
+        position: absolute;
+        
+        }
+        
+    
+           </style> 
+    
+ 
+     
+
+</head>
+<body>
+    <button id="left">왼쪽으로 이동</button>
+    <button id="right">오른쪽으로 이동</button>
+   <div class= "left" id="box"> <strong> BOX</strong></div>
+    
+   
+
+
+   <script>
+     
+     var b = 0
+       var a= document.getElementById('box')
+
+    document.getElementById('left')
+       .addEventListener('click', function(){
+       b = b-100  
+       a.style.left=b+'px' 
+          
+       });
+
+
+    document.getElementById('right')
+       .addEventListener('click', function(){
+         b = b+100
+       a.style.left=b+'px'  
+       });
+      
+      
+
+   </script>
+ 
+</body>
+</html>
